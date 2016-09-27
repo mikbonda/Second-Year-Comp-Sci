@@ -1,0 +1,35 @@
+import java.io.File;
+import java.io.*;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ReadArrayFromFile {
+	String fileName;
+	ArrayList<String> CopyFile = new ArrayList<>();
+
+	public ReadArrayFromFile(String A) {
+		fileName = A;
+	}
+	// Files.lines(fileNum, StandardCharsets.UTF_8);
+
+	Scanner theScanner = null;
+	try{
+	        theScanner = new Scanner(new FileInputStream(fileName));
+
+	        
+	    } 
+	    catch (FileNotFoundException e) {
+	        e.printStackTrace();
+	    }
+	while (theScanner.hasNextLine()) {
+        String nextLine = theScanner.next();
+        for(int i = 0; i< CopyFile.size() ; i++)
+        {
+        	CopyFile.add(i , nextLine);
+        }
+    theScanner.close();
+    }
+	 
+}
+}

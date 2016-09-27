@@ -1,0 +1,38 @@
+public class InsertionSort {
+
+	String[] listOfItems2 = new String[100];
+	public InsertionSort( String[] A)
+	{
+		for(int i=0; i <A.length ; i++)
+		{
+		listOfItems2[i] = A[i];	
+		}
+	}
+	
+	public String[] sort()
+	{
+		   int initialPosition;
+		   String valueToInsert;
+			
+		   for(int i =0; i = 0 < listOfItems2.length ; i++)
+		   {
+		      /* select value to be inserted */
+		      valueToInsert = listOfItems2[i];
+		      int holePosition = i;
+		      
+		      /*locate hole position for the element to be inserted */
+				
+		      while (holePosition > 0 && listOfItems2[holePosition-1] > valueToInsert)
+		         listOfItems2[holePosition] = listOfItems2[holePosition-1];
+		         holePosition = holePosition -1;
+		   }do
+				
+		      /* insert the number at hole position */
+		      A[holePosition] = valueToInsert
+		      
+		   end for
+			
+		end procedure
+		   }
+	}
+}

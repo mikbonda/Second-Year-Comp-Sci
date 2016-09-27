@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Driver {
+
+	
+	
+	public static void main(String[] args) {
+		
+		ReadArrayFromFile("p1data00008.txt");
+
+	}
+
+}
